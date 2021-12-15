@@ -1,0 +1,91 @@
+html,body {
+
+}
+
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;*/
+
+#section1 {
+	background-color: #343a40;
+}
+
+.container {
+	padding: 3% 15%;
+}
+
+#section1 .navbar-item {
+	font-family: 'Raleway';
+	font-weight: 500;
+}
+
+#navbar_brand {
+	font-family: 'Raleway';
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+#section1 .row {
+	padding-top: 2%;
+}
+
+#sec1col1 h1{
+	font-family: "Source Sans Pro";
+	font-weight: 700;
+	font-size: 50px;
+	padding: 10px 20px 5px 10px;
+}
+
+#sec1col1 button {
+	font-family: "Raleway";
+	font-weight: 400;
+	margin-bottom: 1.5em;
+	text-align: center;
+}
+
+.col-md-6 {
+	margin: auto;
+}
+
+#buttondiv {
+	text-align: center;
+}
+
+#image {
+	text-align: center;
+	transform: rotate();
+	transition-property: transform;
+	transition-duration: 0.3s;
+	
+}
+
+#image:hover {
+	transform: rotate(0);
+	transform: scale(1.1);
+	transition-property: transform;
+	transition-duration: 0.5s;
+}
+
+.col-lg-4 {
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+}
+
+#redback {
+	background-color: #ee2839;
+	color: #fff;
+}
+
+.section4 {
+	background-color: #343a40;
+	text-align: center;
+}
+
+footer {
+	margin: auto auto;
+	text-align: center;
+	padding-top: 2.5em;
+	padding-bottom: 2.3em; 
+	font-family: "Source Sans Pro";
+	font-weight: 600;
+}
