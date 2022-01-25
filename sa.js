@@ -56,25 +56,19 @@ checkUserName = () => {
 
 
 checkEmail = () => {
-  const emtxt = document.getElementById("email");
-  const emnoval = emtxt.value.trim();
-  const regx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  
-  if (emnoval === "") {
-    //console.log(firstNameVal)
-    return error(emtxt, "cannot be empty");
-  }
-  else if(regx.test(emnoval))
+  email = document.getElementById('email');
+  let emailval = email.value.trim();
+  const emailregx = /([a-z0-9\.\-_]{5,25})@christuniversity.in$/;
+  if(emailregx.test(emailval))
   {
-    return success(emtxt);
+    return success(email);
   }
   else {
-    return error(emtxt, "sinchana.s@mca.christuniversity.in, sinchana@christuniversity.in ");
+    return error(email, "sinchana.s@mca.christuniversity.in, sinchana@christuniversity.in ");
   }
-
-
-
 }
+
+
 checkPassword = () => {
   password = document.getElementById("password");
   let passwordVal = password.value.trim();
